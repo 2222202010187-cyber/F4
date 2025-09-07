@@ -1,120 +1,117 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tour Hà Nội - Hạ Long - Cát Bà</title>
+  <title>Discover Vietnam - Tour Hà Nội, Hạ Long, Cát Bà</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
+      line-height: 1.6;
+      background: #fdfdfd;
+      color: #333;
     }
     header {
-      background: darkblue;
-      color: white;
-      padding: 15px;
-      text-align: center;
-    }
-    nav {
-      background: #333;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: yellow;
-    }
-    .hero {
       background: url("https://images.unsplash.com/photo-1518684079-3c830dcef090?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80") center/cover no-repeat;
-      color: white;
       height: 400px;
+      color: white;
+      text-align: center;
       display: flex;
-      align-items: center;
-      justify-content: center;
       flex-direction: column;
+      justify-content: center;
       text-shadow: 2px 2px 5px black;
     }
-    .hero h1 {
-      font-size: 48px;
+    header h1 {
+      font-size: 60px;
       margin: 0;
     }
+    header p {
+      font-size: 22px;
+      margin: 10px 0 0;
+    }
     .container {
+      max-width: 1000px;
+      margin: auto;
       padding: 20px;
     }
-    .tour-day {
+    h2 {
+      color: darkblue;
+      margin-top: 40px;
+    }
+    .itinerary div {
       background: #f0f0f0;
-      padding: 15px;
       margin: 10px 0;
+      padding: 15px;
       border-radius: 8px;
     }
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+    .services li {
+      background: url("https://cdn-icons-png.flaticon.com/512/1828/1828640.png") no-repeat left center;
+      background-size: 20px;
+      padding-left: 30px;
+      margin: 10px 0;
+    }
+    .cta {
+      text-align: center;
+      margin: 40px 0;
+    }
     .btn {
-      display: inline-block;
       background: darkblue;
       color: white;
-      padding: 12px 20px;
+      padding: 15px 30px;
       text-decoration: none;
+      font-size: 20px;
       border-radius: 5px;
-      margin-top: 20px;
+      transition: 0.3s;
     }
     .btn:hover {
-      background: #ff6600;
+      background: orange;
     }
     footer {
       background: #333;
       color: white;
       text-align: center;
       padding: 15px;
-      margin-top: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h2>HANOI TRAVEL</h2>
-    <p>Tour Hà Nội - Hạ Long - Cát Bà (6N5Đ)</p>
+    <h1>DISCOVER VIETNAM</h1>
+    <p>Hà Nội - Hạ Long - Cát Bà (6N5Đ)</p>
   </header>
 
-  <nav>
-    <a href="#lich-trinh">Lịch trình</a>
-    <a href="#gia">Giá tour</a>
-    <a href="#lien-he">Liên hệ</a>
-  </nav>
+  <div class="container">
+    <h2>🗺 Lịch trình tour</h2>
+    <div class="itinerary">
+      <div><strong>Day 1:</strong> Hà Nội → Hạ Long, tham quan Bảo tàng & đi cáp treo</div>
+      <div><strong>Day 2:</strong> Du thuyền Vịnh Hạ Long & tham quan hang động</div>
+      <div><strong>Day 3:</strong> Công viên Quốc gia Cát Bà & Chợ đêm</div>
+      <div><strong>Day 4:</strong> Ngày phiêu lưu – Leo núi, chèo kayak, BBQ trên bãi biển</div>
+      <div><strong>Day 5:</strong> Phố cổ Hà Nội & Tour ẩm thực đường phố</div>
+      <div><strong>Day 6:</strong> City tour & Mua sắm trước khi về</div>
+    </div>
 
-  <section class="hero">
-    <h1>Khám phá Việt Nam</h1>
-    <p>Hành trình 6 ngày 5 đêm đáng nhớ</p>
-    <a href="#lien-he" class="btn">Đặt tour ngay</a>
-  </section>
+    <h2>✨ Dịch vụ bao gồm</h2>
+    <div class="services">
+      <ul>
+        <li>Du thuyền 5 sao Vịnh Hạ Long</li>
+        <li>Leo núi, chèo kayak, trekking tại Cát Bà</li>
+        <li>Ẩm thực đường phố Hà Nội & tham quan văn hoá</li>
+        <li>BBQ bãi biển, câu mực đêm & chợ đêm</li>
+      </ul>
+    </div>
 
-  <div class="container" id="lich-trinh">
-    <h2>Lịch trình chi tiết</h2>
-    <div class="tour-day"><strong>Ngày 1:</strong> Hà Nội - Văn Miếu, Hồ Hoàn Kiếm, phố cổ.</div>
-    <div class="tour-day"><strong>Ngày 2:</strong> Hạ Long - Du thuyền vịnh Hạ Long.</div>
-    <div class="tour-day"><strong>Ngày 3:</strong> Tham quan hang Sửng Sốt, làng chài.</div>
-    <div class="tour-day"><strong>Ngày 4:</strong> Cát Bà - Bãi biển Cát Cò.</div>
-    <div class="tour-day"><strong>Ngày 5:</strong> Khám phá Vườn quốc gia Cát Bà.</div>
-    <div class="tour-day"><strong>Ngày 6:</strong> Trở về Hà Nội.</div>
-  </div>
-
-  <div class="container" id="gia">
-    <h2>Giá tour</h2>
-    <p><strong>Người lớn:</strong> 6.500.000 VNĐ</p>
-    <p><strong>Trẻ em:</strong> 3.500.000 VNĐ</p>
-  </div>
-
-  <div class="container" id="lien-he">
-    <h2>Liên hệ</h2>
-    <p>📍 Văn phòng: 123 Phố Huế, Hà Nội</p>
-    <p>📞 Hotline: 0909 123 456</p>
-    <p>📧 Email: info@hanoitravel.vn</p>
-    <a href="mailto:info@hanoitravel.vn" class="btn">Gửi Email</a>
+    <div class="cta">
+      <a href="tel:0946113606" class="btn">📞 BOOK NOW - 0946.113.606</a>
+    </div>
   </div>
 
   <footer>
